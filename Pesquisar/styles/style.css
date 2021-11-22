@@ -29,16 +29,14 @@ h1 {
     letter-spacing: 10%;
     }
 
-   
-    .saircontainer {}
       
-      .sair {
-        position:absolute;
-        top:0;
-        right:0;
-        margin-right: 20px;
-        margin-top: 13px;
-      }
+.sair {
+    position:absolute;
+    top:0;
+    right:0;
+    margin-right: 20px;
+    margin-top: 13px;
+}
 
 
 h2 {
@@ -89,3 +87,35 @@ input:focus{
     margin-bottom: -10px;
 }
 
+p {
+    margin:0;
+    margin-bottom: 10px; 
+    font-family: UtopiaStd;
+    font-size: 26px;
+    color: white;
+   
+    }
+
+.maiormargem{
+    margin-top: 40px;
+}
+
+.colunas {
+    column-count: 3;
+    column-gap: 40px;
+    margin-left: 53px;
+
+    }
+
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.3s;
+ }
+
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:rgb(197, 197, 197); }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:rgb(197, 197, 197)}
