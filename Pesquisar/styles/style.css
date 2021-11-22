@@ -11,20 +11,81 @@
 }
 
 
-    body {
-        background-color: rgba(32, 32, 32, 1);
+body {
+    background-color: rgba(32, 32, 32, 1);
     }
      
-    h1 {
-      font-family: UtopiaStdIt;
-      font-size: 24px;
-      color: white;
-      letter-spacing: 10%;
+h1 {
+    position: absolute;
+    width: 312px;
+    height: 29px;
+    top: 0;
+    left: 0;
+    margin-left: 53px;
+
+    font-family: UtopiaStdIt;
+    font-size: 24px;
+    color: white;
+    letter-spacing: 10%;
     }
 
-    p {
-      font-family: UtopiaStd;
-      font-size: 72px;
-      color: white;
-      line-height: 60%;
+   
+    .saircontainer {}
+      
+      .sair {
+        position:absolute;
+        top:0;
+        right:0;
+        margin-right: 20px;
+        margin-top: 13px;
       }
+
+
+h2 {
+ 
+    width: 444px;
+    height: 60px;
+    margin-left: 53px;
+    margin-top: 150px; 
+    
+    font-family: UtopiaStd;
+    font-size: 72px;
+    color: white;
+    line-height: 60%;
+    }
+
+.h2margem {
+    margin-top: 100px; 
+   
+}
+
+.inputpesquisar {
+
+    background-color: transparent;    
+    border: none;
+    border-bottom: 2px solid white;
+    width: 480px;
+
+    font-family: UtopiaStd;
+    font-size: 22px;
+    color: white;
+    line-height: 29px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.pesquisarcontainer {
+
+    margin-left: 53px;
+    margin-top: 30px;
+
+}
+
+.lupa {
+
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
