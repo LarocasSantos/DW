@@ -1,0 +1,35 @@
+.main{
+background-color: #202020;
+color: white;
+
+}
+
+@font-face {
+    font-family: UtopiaStdIt;
+    src: url("UtopiaStd-DispIt.otf") format("opentype");
+}
+
+@font-face {
+    font-family: UtopiaStd;
+    src: url("UtopiaStd-Disp.otf") format("opentype");
+}
+
+
+
+.cabecalho{
+    font-family: UtopiaStd;
+    
+}
+
+/* .titulosite{
+    position: absolute;
+    width: 312px;
+    height: 29px;
+    top: 0;
+    left: 0;
+    margin-left: 53px;
+    font-family: UtopiaStdIt;
+    font-size: 24px; 
+    letter-spacing: 10%;
+} */
+
