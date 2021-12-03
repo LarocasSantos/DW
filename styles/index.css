@@ -1,3 +1,15 @@
+@font-face {
+    font-family: UtopiaStdIt;
+    font-weight: 600;
+    src: url("UtopiaStd-DispIt.otf") format("opentype");
+}
+
+@font-face {
+    font-family: UtopiaStd;
+    font-weight: 600;
+    src: url("UtopiaStd-Disp.otf") format("opentype");
+}
+
 .main{
     background-color: #202020;
     
@@ -52,16 +64,21 @@
   }
 
   .block .titulo{
+    font-family: UtopiaStd;
+    color: #202020;
+    line-height: 50px;
     text-align: center;
-    font-size: 46px;
+    font-size: 36px;
      
       
   }
 
   .block .autor{
     text-align: center;
+    font-family: UtopiaStdIt;
+    font-weight: normal;
     font-size: 24px;
-    font-style: italic;
+    line-height: 30px;
 }
 
 .selecao :hover{
