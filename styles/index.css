@@ -27,7 +27,7 @@
     text-align:start;
     font-style: italic;
     color: white;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     display: inline;
 }
 .cabecalho img{
@@ -37,20 +37,32 @@
 
 .cabecalho ul{
     list-style-type: none;
+    padding-inline-start: 10px;
 }
 
 .cabecalho ul li{
     font-size: 24px;
     text-align:start;
     color: white;
-    margin-left: 20px;
+   /* margin-left: 20px;*/
     display: inline;
 }
 
 #titulo{
     font-size: 24px;
-    font-style: italic;
     color: white;
+    font-family: UtopiaStdIt;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+#sobre{
+    margin-left: 20px;
+    font-family: UtopiaStd;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 0.1em;
 }
 
 .cabecalho a{
