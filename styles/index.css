@@ -39,8 +39,7 @@
     width: 25px;
     height: 25px;
     margin-top: 5px;
-    margin-right: 25px;
-    
+    margin-right: 25px;  
 }
 
 
@@ -54,7 +53,7 @@
 
 .block {
     width: 30%;
-    height: 90vh;
+    height: 91vh;
     border-style: solid;
     border-color: #202020;
     border-radius: 10px;
