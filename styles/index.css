@@ -35,6 +35,31 @@
     display: inline;
 }
 
+.cabecalho ul{
+    list-style-type: none;
+}
+
+.cabecalho ul li{
+    font-size: 24px;
+    text-align:start;
+    color: white;
+    margin-left: 20px;
+    display: inline;
+}
+
+#titulo{
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+}
+
+.cabecalho a{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
 #lupa{
     width: 25px;
     height: 25px;
