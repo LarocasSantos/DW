@@ -6,27 +6,16 @@ color: white;
 
 @font-face {
     font-family: UtopiaStdIt;
+    font-weight: 600;
     src: url("UtopiaStd-DispIt.otf") format("opentype");
 }
 
 @font-face {
     font-family: UtopiaStd;
+    font-weight: 600;
     src: url("UtopiaStd-Disp.otf") format("opentype");
 }
 
-
-
-/* .titulosite{
-    position: absolute;
-    width: 312px;
-    height: 29px;
-    top: 0;
-    left: 0;
-    margin-left: 53px;
-    font-family: UtopiaStdIt;
-    font-size: 24px; 
-    letter-spacing: 10%;
-} */
 
 .cabecalho {
     

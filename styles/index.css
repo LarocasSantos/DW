@@ -52,7 +52,7 @@
     color: white;
     font-family: UtopiaStdIt;
 font-weight: normal;
-letter-spacing: 0.1em;
+letter-spacing: 10%;
 }
 
 #sobre{
@@ -61,7 +61,7 @@ font-family: UtopiaStd;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
-letter-spacing: 0.1em;
+letter-spacing: 10%;
 }
 
 .cabecalho a{
