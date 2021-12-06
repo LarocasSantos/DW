@@ -1,8 +1,9 @@
 .main{
 background-color: #202020;
 color: white;
-
+max-width: 100%;
 }
+
 
 @font-face {
     font-family: UtopiaStdIt;
@@ -16,58 +17,75 @@ color: white;
     src: url("UtopiaStd-Disp.otf") format("opentype");
 }
 
+body main {
+display: flex;
+}
+
 
 .cabecalho {
-    
     width: 312px;
     height: 29px;
     top: 0;
     left: 0;
     margin-left: 53px;
-
     font-family: UtopiaStdIt;
     font-size: 24px;
     color: white;
     letter-spacing: 10%;
 }
 
-.sobre {
+.sobre{
+max-width:50%;
+margin: 59px;
+
+}
+.sobre h1 {
  
     width: 444px;
     height: 60px;
-    margin-left: 53px;
-    margin-top: 80px; 
-    
     font-family: UtopiaStd;
     font-size: 72px;
     color: white;
     line-height: 60px;
-  
-}
-.design {
-    width: 444px;
-    height: 60px;
-    margin-left: 53px;
-    margin-top: 100px; 
-    margin-right: 30px; 
-    
-    font-family: UtopiaStd;
-    font-size: 72px;
-    color: white;
-    line-height: 60px;
-    margin-bottom: 120px; 
-     
+    margin:0;
+    margin-bottom:30px;
+
 }
 
-.texto {
-    margin:0;
-    margin-bottom: 10px; 
+.info {
+    max-width:50%;
+   display: flex;
+   flex-direction: column;
+   margin-top:59px;
+}
+
+.info .design h1{
+    width: 444px;
+    height: 60px;
+    margin: 0; 
+    font-family: UtopiaStd;
+    font-size: 72px;
+    color: white;
+    line-height: 60px;
+    margin-bottom:90px;
+}
+
+.info .contactos h1{
+    width: 444px;
+    height: 60px;
+    margin: 60px 0 30px 0;
+    font-family: UtopiaStd;
+    font-size: 72px;
+    color: white;
+    line-height: 60px;
+}
+
+
+.info p,.sobre p {
     font-family: UtopiaStd;
     font-size: 24px;
     color: white;
-    margin-left: 53px;
-    margin-right: 500px;
-   
+    margin:0;
  }
 
 a:link {
