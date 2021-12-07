@@ -162,6 +162,11 @@
     <!-- <script src='../js/index.js'></script> -->
 
 
+    <footer>
+
+
+
+    </footer>
 
 </body>
 
@@ -179,7 +184,7 @@
         if (result.hasClass("Mostrar")) {
             $('.LivroConteudo').removeClass("Mostrar");
         } else {
-            $('.LivroConteudo').removeClass("Mostrar");
+            $('.LivroConteudo').not(result).removeClass("Mostrar");
             result.addClass("Mostrar");
         }
 
