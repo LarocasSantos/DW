@@ -119,7 +119,7 @@ letter-spacing: 10%;
      width:200%;   /* importante pra smooth transition */
      overflow: hidden;
      border-style: solid;
-     border-color: black;
+     border-color: #202020;
      border-radius: 10px;
      justify-content:space-between;
  
