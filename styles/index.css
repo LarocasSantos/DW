@@ -182,6 +182,8 @@ letter-spacing: 10%;
  
  .slide-content{
      display: block;
+     font-family: UtopiaStd;
+     font-weight: normal;
      width: 720px;
      padding: 40px;
      color:rgb(7, 7, 7);
