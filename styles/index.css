@@ -10,186 +10,180 @@
     src: url("UtopiaStd-Disp.otf") format("opentype");
 }
 
-.main{
-    background-color: #202020;
-    
-    }
-
-.cabecalho{
-    height: 4vh;
+html,
+body {
+    height: 100%;
 }
 
+body {
+    background-color: #202020;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 
-.cabecalho p{
+.cabecalho {
+    height: 50px;
+    margin-bottom: 10px;
+}
 
+.cabecalho p {
     font-size: 24px;
-    text-align:start;
+    text-align: start;
     font-style: italic;
     color: white;
     /*margin-left: 20px;*/
     display: inline;
 }
-.cabecalho img{
+
+.cabecalho img {
     float: right;
     display: inline;
 }
 
-.cabecalho ul{
+.cabecalho ul {
     list-style-type: none;
     padding-inline-start: 10px;
 }
 
-.cabecalho ul li{
+.cabecalho ul li {
     font-size: 24px;
-    text-align:start;
+    text-align: start;
     color: white;
-   /* margin-left: 20px;*/
+    /* margin-left: 20px;*/
     display: inline;
 }
 
-#titulo{
-    font-size: 24px;
-    color: white;
-    font-family: UtopiaStdIt;
-font-weight: normal;
-letter-spacing: 10%;
-}
-
-#sobre{
-margin-left: 20px;
-font-family: UtopiaStd;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-letter-spacing: 10%;
-}
-
-.cabecalho a{
+.cabecalho a {
     color: white;
     background-color: transparent;
     text-decoration: none;
     transition: 0.3s;
 }
 
-#lupa{
+#titulo {
+    font-size: 24px;
+    color: white;
+    font-family: UtopiaStdIt;
+    font-weight: normal;
+    letter-spacing: 10%;
+}
+
+#sobre {
+    margin-left: 20px;
+    font-family: UtopiaStd;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 10%;
+}
+
+#lupa {
     width: 25px;
     height: 25px;
     margin-top: 5px;
-    margin-right: 25px;  
+    margin-right: 25px;
 }
 
-
-.selecao{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.selecao {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
 
 /*////////////////////////////////////////////////// */
- 
-*{
+
+* {
     /* padding:0;
      margin:0;*/
-     box-sizing: border-box;
- }
- .container {
-    /* max-width: 900px;
-     margin: 50px auto;
-     padding: 0 20px;*/
-    /* padding: 0 10px;*/
- }
- 
- .slides {
-    /* width: 100%;
-     display: flex;*/
-     overflow: hidden;
-    /* width: 100%;
-     height: 100%;*/
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     padding: 0%;
- }
- .slide {
-     list-style-type: none;
-     height: 90vh;
-     /*width: 5%;*/
-     width:200%;   /* importante pra smooth transition */
-     overflow: hidden;
-     border-style: solid;
-     border-color: black;
-     border-radius: 10px;
-     justify-content:space-between;
- 
-     -webkit-transition:all 500ms linear;
-     -moz-transition:all 500ms linear;
-     -o-transition:all 500ms linear;
-     -ms-transition:all 500ms linear;
-     transition:all 500ms linear;
- }
- 
- /* brands colors */
- .brand1{
-     background-color: #ffffff;
- }
- .brand2{
-     background-color: #ffffff;
- }
- .brand3{
-     background-color: #ffffff;
- }
- .brand4{
-     background-color: #ffffff;
- }
- .brand5{
-     background-color: #ffffff;
- }
- 
- .slide a.action{
-     display: block; /* clicar no bloco inteiro*/
-     height: 100%;
-     /*position: relative;*/
- }
- .slide a.action span{
-     font-weight: 36px;
-     color:rgb(3, 3, 3);
- }
- 
- .slide a.action{
-     text-decoration: none;
-     display: flex;
-     flex-direction: column;
-     justify-content:space-between;
- }
- 
-  a.action .titulo{
-     font-family: UtopiaStd;
-     color: #202020;
-     line-height: 50px;
-     text-align: center;
-     font-size: 32px;   
-   }
- 
- a.action  .autor{
-     text-align: center;
-     font-family: UtopiaStdIt;
-     font-weight: normal;
-     font-size: 24px;
-     line-height: 30px;
- }
- 
- .slide-content{
-     display: block;
-     width: 720px;
-     padding: 40px;
-     color:rgb(7, 7, 7);
- }
- 
- .active {
-     width:900%;
- }
- .active a.action{
-     display: none;
- }
+    box-sizing: border-box;
+}
+
+.Livros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.Livro {
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    margin: 0px 2px 0px 2px;
+    width: auto;
+    flex: 1;
+}
+
+.CapaTitulo {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-family: UtopiaStd;
+    font-weight: normal;
+    letter-spacing: 10%;
+}
+
+.LivroCapa {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.CapaTitulo {
+    align-self: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    font-family: UtopiaStdIt;
+    font-weight: normal;
+    letter-spacing: 10%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.CapaAutor {
+    text-align: center;
+    align-self: center;
+    margin-top: auto;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: UtopiaStdIt;
+    font-weight: normal;
+    letter-spacing: 10%;
+}
+
+.LivroConteudo {
+    width: 0px;
+    transition: 1s;
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.ConteudoTitulo {
+    margin: 30px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: UtopiaStd;
+    font-weight: normal;
+    letter-spacing: 10%;
+}
+
+.ConteudoTexto {
+    margin: 30px;
+    margin-top: 5px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-family: UtopiaStd;
+    font-weight: normal;
+}
+
+.Mostrar {
+    flex: 5;
+    margin: 0px 2px 0px 2px;
+}

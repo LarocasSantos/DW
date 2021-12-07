@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/* $(document).ready(function(){
 
     // link action
     $(".action").click(function(e){
@@ -27,7 +27,7 @@ window.onload = function(){
  };
 */
 
-// checkWidth
+/* // checkWidth
 checkWidth = function(){
     var windowsize = $(window).width();
     if (windowsize > 480) {
@@ -46,4 +46,4 @@ $(window).resize(function() {
     // finish resize
     clearTimeout(window.resizedFinished);
     window.resizedFinished = setTimeout( checkWidth , 500);
-});
+}); */ 
