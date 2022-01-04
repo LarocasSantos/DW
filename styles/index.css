@@ -178,12 +178,15 @@ body {
 
 .ConteudoTexto {
     margin: 30px;
-    margin-top: 5px;
-    font-size: 22px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     font-family: UtopiaStd;
     font-weight: normal;
     height: 1px;
+}
+
+.ConteudoTexto p{
+padding: 0px;
 }
 
 .Mostrar {
