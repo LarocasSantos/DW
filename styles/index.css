@@ -10,6 +10,7 @@
     src: url("UtopiaStd-Disp.otf") format("opentype");
 }
 
+
 html,
 body {
     height: 100%;
@@ -45,7 +46,7 @@ body {
 
 .cabecalho ul {
     list-style-type: none;
-    padding-inline-start: 10px;
+    /*padding-inline-start: 10px; */
 }
 
 .cabecalho ul li {
@@ -140,7 +141,7 @@ body {
     align-self: center;
     font-size: 35px;
     color: rgb(0, 0, 0);
-    font-family: UtopiaStdIt;
+    font-family: UtopiaStd;
     font-weight: normal;
     letter-spacing: 10%;
     text-align: center;

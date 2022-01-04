@@ -1,7 +1,8 @@
-.main{
+*{
 background-color: #202020;
 color: white;
 max-width: 100%;
+box-sizing: border-box;
 }
 
 
@@ -17,75 +18,87 @@ max-width: 100%;
     src: url("UtopiaStd-Disp.otf") format("opentype");
 }
 
-body main {
-display: flex;
-}
-
 
 .cabecalho {
-    width: 312px;
-    height: 29px;
-    top: 0;
-    left: 0;
-    margin-left: 53px;
-    font-family: UtopiaStdIt;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+    font-size: 24px;
+    text-align: start;
+    font-style: italic;
+    color: white;
+    /*margin-left: 20px;*/
+    display: inline;
+}
+
+.cabecalho ul {
+    list-style-type: none;
+    /* padding-inline-start: 10px; */
+}
+
+.cabecalho ul li {
+    font-size: 24px;
+    text-align: start;
+    color: white;
+    /* margin-left: 20px;*/
+    display: inline;
+}
+
+.cabecalho a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#titulo-site {
     font-size: 24px;
     color: white;
+    font-family: UtopiaStdIt;
+    font-weight: normal;
     letter-spacing: 10%;
 }
 
+#voltar {
+    margin-left: 20px;
+    font-family: UtopiaStd;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 10%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 .sobre{
-max-width:50%;
-margin: 59px;
-
+    width: 50vw;
+    padding:30px;    
+    margin-left: 20px;
 }
-.sobre h1 {
- 
-    width: 444px;
-    height: 60px;
+.info{
+    width:50vw;
+    padding: 30px;
+}
+
+.titulos {
     font-family: UtopiaStd;
-    font-size: 72px;
+    font-size: 35px;
     color: white;
-    line-height: 60px;
-    margin:0;
-    margin-bottom:30px;
-
-}
-
-.info {
-    max-width:50%;
-   display: flex;
-   flex-direction: column;
-   margin-top:59px;
-}
-
-.info .design h1{
-    width: 444px;
-    height: 60px;
-    margin: 0; 
-    font-family: UtopiaStd;
-    font-size: 72px;
-    color: white;
-    line-height: 60px;
-    margin-bottom:90px;
-}
-
-.info .contactos h1{
-    width: 444px;
-    height: 60px;
-    margin: 60px 0 30px 0;
-    font-family: UtopiaStd;
-    font-size: 72px;
-    color: white;
-    line-height: 60px;
+    font-weight: 600;
 }
 
 
-.info p,.sobre p {
+.texto {
     font-family: UtopiaStd;
     font-size: 24px;
     color: white;
     margin:0;
+    font-weight: 600;
  }
 
 a:link {
@@ -94,6 +107,7 @@ a:link {
         text-decoration: none;
         transition: 0.3s;
 }
+
     
     a:visited { text-decoration: none; color:white; }
     a:hover { text-decoration: none; color:rgb(197, 197, 197); }
