@@ -1,0 +1,58 @@
+﻿@using System.Web
+@model IEnumerable<String>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Autor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="~/css/stylePesquisar.css">
+
+    <!-- Cabeçalho -->
+    <div>
+        <a asp-action="Index">
+            <h1>REINVENÇÃO DA LEITURA </h1>
+        </a>
+        <!--  <a href="Pesquisar.html">
+         <img class="sair" src="../icons/sair.png" width="24" height="24">
+         </a> -->
+    </div>
+</head>
+
+
+<body>
+      <a asp-action="Pesquisar">
+        <h2>POR AUTOR</h2>
+    </a>
+    <!-- Nomes dos Autores por ordem alfabética -->
+    <div class="colunas">
+
+        @foreach (var item in Model)
+        {
+            <a asp-action="IndexAutor" asp-route-autor="@item"> @Html.Raw(HttpUtility.HtmlDecode(item.Replace("@", ""))) </a>
+           
+        }
+        @*
+            <p>A &nbsp &nbspAlberto Caeiro</p>
+            <p>&nbsp &nbsp &nbsp &nbspAlexandre 0'neill</p>
+            <p class="maiormargem">B &nbsp &nbspNome do Autor</p>
+            <p>&nbsp &nbsp &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">C &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">D &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">E &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">F &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">G &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">H &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">I &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">J &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">K &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">L &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">M &nbsp &nbspNome do Autor</p>
+            <p class="maiormargem">N &nbsp &nbspNome do Autor</p>*@
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿@using System.Web
+@model IEnumerable<String>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Autor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="~/css/stylePesquisar.css">
+
+    <!-- Cabeçalho -->
+    <div>
+        <a asp-action="Index">
+            <h1>REINVENÇÃO DA LEITURA </h1>
+        </a>
+        <!--  <a href="Pesquisar.html">
+         <img class="sair" src="../icons/sair.png" width="24" height="24">
+         </a> -->
+    </div>
+</head>
+
+
+<body>
+      <a asp-action="Pesquisar">
+        <h2>POR TEMA</h2>
+    </a>
+    <!-- Nomes dos Autores por ordem alfabética -->
+    <div class="colunas">
+
+        @foreach (var item in Model)
+        {
+            <a asp-action="IndexTema" asp-route-tema="@item"> @Html.Raw(HttpUtility.HtmlDecode(item.Replace("@", ""))) </a>
+           
+        }
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿@using System.Web
+@model IEnumerable<String>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Autor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="~/css/stylePesquisar.css">
+
+    <!-- Cabeçalho -->
+    <div>
+        <a asp-action="Index">
+            <h1>REINVENÇÃO DA LEITURA </h1>
+        </a>
+        <!--  <a href="Pesquisar.html">
+         <img class="sair" src="../icons/sair.png" width="24" height="24">
+         </a> -->
+    </div>
+</head>
+
+
+<body>
+    <a asp-action="Pesquisar">
+        <h2>POR PALAVRA</h2>
+    </a>
+    <!-- Input de pesquisar -->
+    @using (Html.BeginForm("IndexPalavra", "Poemas"))
+    {
+
+
+        <div class="pesquisarcontainer">
+            <input class="inputpesquisar" type="palavraInput" id="palavraInput" name="palavraInput" placeholder="Pesquisar">
+
+            <input type="image" class="lupa" src="~/icons/lupa.png" width="32.29" height="34">
+
+        </div>
+
+
+
+    }
+
+    <!-- <svg height="293" width="480">
+        <line x1="10" y1="200" x2="300" y2="200" style="stroke:rgb(255, 255, 255, 1);stroke-width:2" />
+    </svg> -->
+
+</body>
+</html>

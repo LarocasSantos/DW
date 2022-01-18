@@ -1,0 +1,32 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pesquisar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="~/css/stylePesquisar.css">
+
+    
+</head>
+    <!-- Cabeçalho -->
+    <div>
+        <a asp-action="Index">
+            <h1>REINVENÇÃO DA LEITURA </h1> 
+        </a>
+        <!--  <a href="Pesquisar.html">
+        <img class="sair" src="../icons/sair.png" width="24" height="24">
+        </a> -->
+    </div>
+
+<body>
+    <!-- Opções do tipo de pesquisa -->
+    <h2><a asp-action="Autor">POR AUTOR</a></h2>
+    <h2 class="h2margem"><a asp-action="Tema">POR TEMA</a></h2>
+    <h2 class="h2margem"><a asp-action="Palavra">POR PALAVRA</a></h2>
+
+</body>
+</html>

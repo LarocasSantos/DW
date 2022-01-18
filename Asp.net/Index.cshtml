@@ -1,0 +1,89 @@
+﻿@using System.Web
+@model IEnumerable<DesenvolvimentoWeb.Poema>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>REIVENÇÃO DA LEITURA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='~/css/index.css'>
+
+
+</head>
+
+
+    <nav class="cabecalho">
+        <div class="bar">
+            <ul>
+                <li id="titulo">REIVENÇÃO DA LEITURA</li>
+                <li id="sobre"><a asp-action="Sobre">SOBRE</a></li>
+                <li>
+                    <a asp-action="Pesquisar"><img id="lupa" src="~/icons/lupa.png" alt="Lupa"></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+        </div>
+    </nav>
+
+
+<div class="Livros">
+
+
+    @foreach (var item in Model)
+    {
+
+
+        <div class="Livro">
+
+            <div class="LivroCapa">
+                <p class="CapaTitulo">
+                    @Html.Raw(HttpUtility.HtmlDecode(item.Titulo.Replace("@", "<br>")))
+               @*     @{
+                        string temp = item.Titulo.Replace(" ", "<br>");
+                    }
+                    @Html.Display(temp);*@
+                </p>
+                <p class="CapaAutor"> @Html.DisplayFor(modelItem => item.Autor)</p>
+            </div>
+
+
+        </div>
+        <div class="LivroConteudo">
+            <div class="ConteudoTitulo"> @Html.Raw(HttpUtility.HtmlDecode(item.Titulo.Replace("@", " ")))</div>
+            <div class="ConteudoTexto">
+                @Html.Raw(HttpUtility.HtmlDecode(item.Conteudo))
+            </div>
+        </div>
+
+    }
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<script>
+    $(document).on("click", ".Livro", function () {
+
+        var LivroClicado = $(this);
+
+
+        var result = LivroClicado.next().first();
+
+        if (result.hasClass("Mostrar")) {
+            $('.LivroConteudo').removeClass("Mostrar");
+        } else {
+            $('.LivroConteudo').not(result).removeClass("Mostrar");
+            result.addClass("Mostrar");
+        }
+
+
+    });
+</script>
